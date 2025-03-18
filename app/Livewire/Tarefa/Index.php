@@ -15,7 +15,7 @@ class Index extends Component
 
     protected $listeners = [
         'abrirModalEdicao',
-        'tarefaAtualizada'=>"render"
+        'tarefaAtualizada' => "render"
     ];
 
     public function render() // caminho

@@ -29,6 +29,7 @@
                                 <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
                                     data-bs-target="#deleteModal"
                                     wire:click="abrirModalExclusao({{ $t->id }})">Excluir</button>
+                                <a href="{{ route('tarefa.editar', ['id' => $t->id]) }}" class="btn btn-info btn-sm">Editar sem modal</a>
                             </td>
                     </tr>
                     @endforeach
@@ -50,7 +51,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p> Tem certeza que deseja excluir a tarefa??</p>
+                    <p> Tem certeza que deseja excluir a tarefa?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>

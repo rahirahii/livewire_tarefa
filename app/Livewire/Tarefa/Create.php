@@ -8,10 +8,10 @@ use Livewire\Component;
 class Create extends Component
 {
 
-public $nome;
-public $data_hora;
-public $descricao;
-//criamos uma variavel para podermos acessa-la 
+    public $nome;
+    public $data_hora;
+    public $descricao;
+    //criamos uma variavel para podermos acessa-la 
 
 
     public function render()
@@ -19,11 +19,12 @@ public $descricao;
         return view('livewire.tarefa.create');
     }
 
-    public function store(){
+    public function store()
+    {
         Tarefa::create([
-            'nome'=>$this->nome,
-            'data_hora'=>$this->data_hora,
-            'descricao'=>$this->descricao
+            'nome' => $this->nome,
+            'data_hora' => $this->data_hora,
+            'descricao' => $this->descricao
         ]);
 
         // this seve para chamar uma variavel fora - acessa algo de dentro da nossa classe
